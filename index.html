@@ -9,7 +9,34 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <style>:root { --black: #070713; --panel: #10102b; --blue: #242175; --blue2: #3027a0; --green: #19f000; --white: #f2f5f2; --muted: #9ba7ad; --line: rgba(190,190,255,.18); } * { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; overflow-x: hidden; -webkit-text-size-adjust: 100%; background: var(--black); color: var(--white); font-family: "DM Sans",sans-serif; } a { color: inherit; text-decoration: none; } button { font: inherit; } .mono { font-family: "DM Mono",monospace; text-transform: uppercase; letter-spacing: 0.1299999999999999em; font-size: 11px; } .wrap { width: min(1180px,calc(100% - 44px)); margin: auto; } .nav { height: 76px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); position: absolute; z-index: 5; top: 0; left: 0; width: 100%; padding: 0 max(22px,calc((100vw - 1180px)/2)); background: rgba(8,11,13,.62); backdrop-filter: blur(14px); } .logo { font: 900 25px "Barlow Condensed",sans-serif; letter-spacing: .04em; } .logo span { color: var(--green); } .navlinks { display: flex; gap: 28px; align-items: center; } .navlinks a { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #d5dcdf; } .navlinks a:hover { color: var(--green); } .btn { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 15px 20px; background: var(--green); color: #080b0d; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; border: 1px solid var(--green); transition: .2s; font-family: 'Barlow Condensed', sans-serif; } .btn:hover { background: transparent; color: var(--green); transform: translateY(-2px); } .btn.ghost { background: transparent; color: var(--white); border-color: var(--line); } .btn.ghost:hover { border-color: var(--green); color: var(--green); } .hero { min-height: clamp(640px,100svh,1000px); position: relative; display: flex; align-items: flex-end; overflow: hidden; background: radial-gradient(ellipse at 70% 36%,#3026a8 0,#211b79 28%,#11102f 58%,#070713 82%); } .hero:before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg,rgba(7,7,19,.96) 0%,rgba(7,7,19,.58) 55%,rgba(7,7,19,.12)),linear-gradient(0deg,#070713 0%,transparent 45%),repeating-linear-gradient(115deg,transparent 0 80px,rgba(25,240,0,.04) 81px 82px); } .hero:after { content: ""; position: absolute; width: 52vw; height: 52vw; max-width: 760px; max-height: 760px; border: 1px solid rgba(25,240,0,.28); border-radius: 50%; right: -8vw; top: 8%; box-shadow: 0 0 0 45px rgba(25,240,0,.035),0 0 0 100px rgba(25,240,0,.025); } .hero-content { position: relative; z-index: 1; padding: 130px 0 70px; margin: 0 auto; } .eyebrow { display: flex; align-items: center; gap: 12px; color: var(--green); } .eyebrow:before { content: ""; width: 32px; height: 1px; background: var(--green); } h1 { font: 900 clamp(40px,12.5vw,125px)/1.12 "Aldrich","Barlow Condensed",sans-serif; letter-spacing: -.05em; margin: 0; color: #fff; text-transform: uppercase; max-width: 1000px; overflow-wrap: break-word; } h1 span { display: block; color: var(--green); -webkit-text-stroke: 1px var(--green); } .hero-bottom { display: flex; align-items: end; justify-content: space-between; gap: 24px; } .hero-copy { margin: 0 0 22px; max-width: 390px; color: #c0cbd0; line-height: 1.6; font-size: 14px; } .hero-meta { display: flex; gap: 26px; margin-top: 25px; } .hero-meta strong { display: block; font: 700 22px "Barlow Condensed",sans-serif; } .hero-meta small { color: var(--muted); font: 10px "DM Mono",monospace; letter-spacing: .1em; } .ticker { overflow: hidden; background: var(--green); color: #080b0d; padding: 13px 0; white-space: nowrap; font: 800 16px "Barlow Condensed",sans-serif; letter-spacing: .12em; } .ticker div { display: inline-block; animation: marquee 26s linear infinite; } .ticker span { padding: 0 28px; } @keyframes marquee{ to {  transform: translateX(-50%); } } section { padding: 110px 0; } .section-head { display: flex; justify-content: space-between; align-items: end; gap: 25px; margin-bottom: 42px; } .kicker { color: var(--green); margin-bottom: 13px; } .section-title { font: 800 clamp(48px,8vw,100px)/.85 "Barlow Condensed",sans-serif; letter-spacing: -.035em; text-transform: uppercase; margin: 0; } .section-title em { font-style: normal; color: var(--green); } .section-note { max-width: 270px; color: var(--muted); font-size: 13px; line-height: 1.6; } .lineup { background: #0c0c22; } .lineup-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; } .artist { min-height: 290px; position: relative; overflow: hidden; background: linear-gradient(145deg,#28228e,#11102d 70%); display: flex; align-items: end; padding: 20px; border: 1px solid var(--line); } .artist:nth-child(2n) { background: linear-gradient(145deg,#201b70,#10102b 70%); } .artist:before { content: ""; position: absolute; width: 190px; height: 240px; border: 1px solid rgba(25,240,0,.28); border-radius: 50%; right: -55px; top: -50px; transform: rotate(35deg); } .artist:after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg,rgba(4,7,9,.95),transparent 70%); } .artist .num { position: absolute; top: 17px; left: 18px; color: var(--green); z-index: 1; } .artist h3 { position: relative; z-index: 1; font: 800 34px "Barlow Condensed",sans-serif; text-transform: uppercase; margin: 0; } .artist small { display: block; color: #b4c0c6; font: 10px "DM Mono",monospace; margin-top: 5px; letter-spacing: .1em; } .artist.add { border: 1px dashed rgba(182,255,0,.45); background: transparent; align-items: center; justify-content: center; text-align: center; color: var(--muted); font-size: 12px; line-height: 1.6; } .manifesto { display: grid; grid-template-columns: 1fr 1fr; gap: 9vw; align-items: center; } .manifesto-art { min-height: 440px; background: linear-gradient(145deg,#29239a,#0d0d2a 65%); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; } .manifesto-art:before, .manifesto-art:after { content: ""; position: absolute; border: 1px solid rgba(182,255,0,.5); width: 65%; aspect-ratio: 1; border-radius: 50%; } .manifesto-art:after { width: 42%; border-color: rgba(182,255,0,.22); } .stamp { font: 900 clamp(55px,9vw,115px)/.75 "Barlow Condensed",sans-serif; letter-spacing: -.06em; text-align: center; z-index: 1; transform: rotate(-9deg); text-shadow: 5px 5px 0 rgba(0,0,0,.25); } .stamp span { color: var(--green); } .manifesto p { color: #b7c2c8; line-height: 1.85; font-size: 15px; max-width: 480px; } .manifesto .bigline { font: 700 clamp(28px,4vw,48px)/.95 "Barlow Condensed",sans-serif; text-transform: uppercase; margin: 25px 0; color: var(--white); } .details { background: var(--blue); position: relative; overflow: hidden; padding-bottom: 0; } .details:after { content: "05"; position: absolute; right: -25px; bottom: -140px; font: 900 480px/.8 "Barlow Condensed",sans-serif; color: rgba(255,255,255,.035); } .detail-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: rgba(255,255,255,.2); margin-top: 48px; position: relative; z-index: 1; } .detail { background: var(--blue); padding: 28px; min-height: 150px; } .detail label { color: var(--green); } .detail strong { display: block; font: 700 30px "Barlow Condensed",sans-serif; margin-top: 18px; text-transform: uppercase; } .detail p { font-size: 12px; color: #c2d0d8; margin: 7px 0 0; } .tickets-grid { display: grid; grid-template-columns: minmax(0,760px); justify-content: center; gap: 14px; } .ticket { border: 1px solid var(--line); padding: 30px; background: var(--panel); position: relative; } .ticket.featured { border-color: var(--green); background: linear-gradient(145deg,#201c70,#10102b); border-radius: 40px; padding: 40px 44px 36px; } .ticket .tag { color: var(--green); } .ticket h3 { font: 800 42px "Barlow Condensed",sans-serif; text-transform: uppercase; margin: 22px 0 5px; } .ticket .price { font: 700 26px "Barlow Condensed",sans-serif; color: var(--green); } .ticket p { color: var(--muted); font-size: 13px; line-height: 1.6; min-height: 42px; } .ticket .btn { margin-top: 18px; width: auto; padding: 16px 28px; font-size: 12px; text-align: center; } .ticket-foot { color: var(--muted); font-size: 11px; margin-top: 18px; } .countdown { background: #0c0c22; padding: 36px 0 48px; } .count-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; } .count-box { border: 1px solid var(--line); padding: 22px; text-align: center; } .count-box strong { display: block; font: 800 clamp(45px,7vw,76px)/1 "Barlow Condensed",sans-serif; color: var(--green); } .count-box span { font: 10px "DM Mono",monospace; color: var(--muted); letter-spacing: .14em; } .faq { max-width: 800px; } .faq details { border-top: 1px solid var(--line); padding: 20px 0; } .faq details:last-child { border-bottom: 1px solid var(--line); } .faq summary { cursor: pointer; list-style: none; font-weight: 700; display: flex; justify-content: space-between; } .faq summary:after { content: "+"; color: var(--green); font-size: 20px; } .faq details[open] summary:after { content: "−"; } .faq p { color: var(--muted); font-size: 13px; line-height: 1.7; max-width: 650px; } footer { padding: 45px 0 30px; border-top: 1px solid var(--line); } .footer-top { display: flex; justify-content: space-between; gap: 30px; align-items: end; } .footer-logo { font: 900 clamp(40px,12vw,145px)/.8 "Barlow Condensed",sans-serif; letter-spacing: -.05em; } .footer-logo span { color: var(--green); } .socials { display: flex; gap: 18px; font: 10px "DM Mono",monospace; color: var(--muted); } .copyright { display: flex; justify-content: space-between; margin-top: 50px; color: #78858b; font: 10px "DM Mono",monospace; letter-spacing: .08em; } .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s,transform .7s; } .reveal.visible { opacity: 1; transform: none; } .pill { border-radius: 999px; } .accent { color: var(--green); } .hero-cta { border-color: #000; } .hero-content .eyebrow { margin: 32px 0 0; } .hero-bottom { margin-top: 24px; } #tickets { padding: 80px 0 100px; } .tickets-head { justify-content: center; text-align: center; margin-bottom: 36px; } @media (max-width:760px){
+        <style>:root { --black: #070713; --panel: #10102b; --blue: #242175; --blue2: #3027a0; --green: #19f000; --white: #f2f5f2; --muted: #9ba7ad; --line: rgba(190,190,255,.18); } * { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; overflow-x: hidden; -webkit-text-size-adjust: 100%; background: var(--black); color: var(--white); font-family: "DM Sans",sans-serif; } a { color: inherit; text-decoration: none; } button { font: inherit; } .mono { font-family: "DM Mono",monospace; text-transform: uppercase; letter-spacing: 0.1299999999999999em; font-size: 11px; } .wrap { width: min(1180px,calc(100% - 44px)); margin: auto; } .nav { height: 76px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); position: absolute; z-index: 5; top: 0; left: 0; width: 100%; padding: 0 max(22px,calc((100vw - 1180px)/2)); background: rgba(8,11,13,.62); backdrop-filter: blur(14px); } .logo { font: 900 25px "Barlow Condensed",sans-serif; letter-spacing: .04em; } .logo span { color: var(--green); } .navlinks { display: flex; gap: 28px; align-items: center; } .navlinks a { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #d5dcdf; } .navlinks a:hover { color: var(--green); } .btn { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 15px 20px; background: var(--green); color: #080b0d; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; border: 1px solid var(--green); transition: .2s; font-family: 'Barlow Condensed', sans-serif; } .btn:hover { background: transparent; color: var(--green); transform: translateY(-2px); } .btn.ghost { background: transparent; color: var(--white); border-color: var(--line); } .btn.ghost:hover { border-color: var(--green); color: var(--green); } .hero { min-height: clamp(640px,100svh,1000px); position: relative; display: flex; align-items: flex-end; overflow: hidden; background: radial-gradient(ellipse at 70% 36%,#3026a8 0,#211b79 28%,#11102f 58%,#070713 82%); } .hero:before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg,rgba(7,7,19,.96) 0%,rgba(7,7,19,.58) 55%,rgba(7,7,19,.12)),linear-gradient(0deg,#070713 0%,transparent 45%),repeating-linear-gradient(115deg,transparent 0 80px,rgba(25,240,0,.04) 81px 82px); } .hero:after { content: ""; position: absolute; width: 52vw; height: 52vw; max-width: 760px; max-height: 760px; border: 1px solid rgba(25,240,0,.28); border-radius: 50%; right: -8vw; top: 8%; box-shadow: 0 0 0 45px rgba(25,240,0,.035),0 0 0 100px rgba(25,240,0,.025); } .hero-content { position: relative; z-index: 1; padding: 130px 0 70px; margin: 0 auto; } .eyebrow { display: flex; align-items: center; gap: 12px; color: var(--green); } .eyebrow:before { content: ""; width: 32px; height: 1px; background: var(--green); } h1 { font: 900 clamp(40px,12.5vw,125px)/1.12 "Aldrich","Barlow Condensed",sans-serif; letter-spacing: -.05em; margin: 0; color: #fff; text-transform: uppercase; max-width: 1000px; overflow-wrap: break-word; } h1 span { display: block; color: var(--green); -webkit-text-stroke: 1px var(--green); } .hero-bottom { display: flex; align-items: end; justify-content: space-between; gap: 24px; } .hero-copy { margin: 0 0 22px; max-width: 390px; color: #c0cbd0; line-height: 1.6; font-size: 14px; } .hero-meta { display: flex; gap: 26px; margin-top: 25px; } .hero-meta strong { display: block; font: 700 22px "Barlow Condensed",sans-serif; } .hero-meta small { color: var(--muted); font: 10px "DM Mono",monospace; letter-spacing: .1em; } .ticker { overflow: hidden; background: var(--green); color: #080b0d; padding: 13px 0; white-space: nowrap; font: 800 16px "Barlow Condensed",sans-serif; letter-spacing: .12em; } .ticker div { display: inline-block; animation: marquee 26s linear infinite; } .ticker span { padding: 0 28px; } @keyframes marquee{ to {  transform: translateX(-50%); } } section { padding: 110px 0; } .section-head { display: flex; justify-content: space-between; align-items: end; gap: 25px; margin-bottom: 42px; } .kicker { color: var(--green); margin-bottom: 13px; } .section-title { font: 800 clamp(48px,8vw,100px)/.85 "Barlow Condensed",sans-serif; letter-spacing: -.035em; text-transform: uppercase; margin: 0; } .section-title em { font-style: normal; color: var(--green); } .section-note { max-width: 270px; color: var(--muted); font-size: 13px; line-height: 1.6; } .lineup { background: #0c0c22; } .lineup-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; } .artist { min-height: 290px; position: relative; overflow: hidden; background: linear-gradient(145deg,#28228e,#11102d 70%); display: flex; align-items: end; padding: 20px; border: 1px solid var(--line); } .artist:nth-child(2n) { background: linear-gradient(145deg,#201b70,#10102b 70%); } .artist:before { content: ""; position: absolute; width: 190px; height: 240px; border: 1px solid rgba(25,240,0,.28); border-radius: 50%; right: -55px; top: -50px; transform: rotate(35deg); } .artist:after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg,rgba(4,7,9,.95),transparent 70%); } .artist .num { position: absolute; top: 17px; left: 18px; color: var(--green); z-index: 1; } .artist h3 { position: relative; z-index: 1; font: 800 34px "Barlow Condensed",sans-serif; text-transform: uppercase; margin: 0; } .artist small { display: block; color: #b4c0c6; font: 10px "DM Mono",monospace; margin-top: 5px; letter-spacing: .1em; } .artist.add { border: 1px dashed rgba(182,255,0,.45); background: transparent; align-items: center; justify-content: center; text-align: center; color: var(--muted); font-size: 12px; line-height: 1.6; } .manifesto { display: grid; grid-template-columns: 1fr 1fr; gap: 9vw; align-items: center; } .manifesto-art { min-height: 440px; background: linear-gradient(145deg,#29239a,#0d0d2a 65%); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; } .manifesto-art:before, .manifesto-art:after { content: ""; position: absolute; border: 1px solid rgba(182,255,0,.5); width: 65%; aspect-ratio: 1; border-radius: 50%; } .manifesto-art:after { width: 42%; border-color: rgba(182,255,0,.22); } .stamp { font: 900 clamp(55px,9vw,115px)/.75 "Barlow Condensed",sans-serif; letter-spacing: -.06em; text-align: center; z-index: 1; transform: rotate(-9deg); text-shadow: 5px 5px 0 rgba(0,0,0,.25); } .stamp span { color: var(--green); } .manifesto p { color: #b7c2c8; line-height: 1.85; font-size: 15px; max-width: 480px; } .manifesto .bigline { font: 700 clamp(28px,4vw,48px)/.95 "Barlow Condensed",sans-serif; text-transform: uppercase; margin: 25px 0; color: var(--white); } .details { background: var(--blue); position: relative; overflow: hidden; padding-bottom: 0; } .details:after { content: "05"; position: absolute; right: -25px; bottom: -140px; font: 900 480px/.8 "Barlow Condensed",sans-serif; color: rgba(255,255,255,.035); } .detail-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: rgba(255,255,255,.2); margin-top: 48px; position: relative; z-index: 1; } .detail { background: var(--blue); padding: 28px; min-height: 150px; } .detail label { color: var(--green); } .detail strong { display: block; font: 700 30px "Barlow Condensed",sans-serif; margin-top: 18px; text-transform: uppercase; } .maplink { display: inline-flex; align-items: center; gap: 8px; margin-top: 4px; font: 500 11px "DM Mono",monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--green); border-bottom: 1px solid rgba(25,240,0,.4); padding-bottom: 3px; transition: .2s; } .maplink:hover { border-bottom-color: var(--green); } .maplink svg { width: 10px; height: 10px; flex: none; } .detail p { font-size: 12px; color: #c2d0d8; margin: 7px 0 0; } .tickets-grid { display: grid; grid-template-columns: minmax(0,760px); justify-content: center; gap: 14px; } .ticket { border: 1px solid var(--line); padding: 30px; background: var(--panel); position: relative; } .ticket.featured { border-color: var(--green); background: linear-gradient(145deg,#201c70,#10102b); border-radius: 40px; padding: 40px 44px 36px; } .ticket .tag { color: var(--green); } .ticket h3 { font: 800 42px "Barlow Condensed",sans-serif; text-transform: uppercase; margin: 22px 0 5px; } .ticket .price { font: 700 26px "Barlow Condensed",sans-serif; color: var(--green); } .ticket p { color: var(--muted); font-size: 13px; line-height: 1.6; min-height: 42px; } .ticket .btn { margin-top: 18px; width: auto; padding: 16px 28px; font-size: 12px; text-align: center; } .ticket-foot { color: var(--muted); font-size: 11px; margin-top: 18px; } .countdown { background: #0c0c22; padding: 36px 0 48px; } .count-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; } .count-box { border: 1px solid var(--line); padding: 22px; text-align: center; } .count-box strong { display: block; font: 800 clamp(45px,7vw,76px)/1 "Barlow Condensed",sans-serif; color: var(--green); } .count-box span { font: 10px "DM Mono",monospace; color: var(--muted); letter-spacing: .14em; } .faq { max-width: 800px; } .faq details { border-top: 1px solid var(--line); padding: 20px 0; } .faq details:last-child { border-bottom: 1px solid var(--line); } .faq summary { cursor: pointer; list-style: none; font-weight: 700; display: flex; justify-content: space-between; } .faq summary:after { content: "+"; color: var(--green); font-size: 20px; } .faq details[open] summary:after { content: "−"; } .faq p { color: var(--muted); font-size: 13px; line-height: 1.7; max-width: 650px; } footer { padding: 45px 0 30px; border-top: 1px solid var(--line); } .footer-top { display: flex; justify-content: space-between; gap: 30px; align-items: end; } .footer-logo { font: 900 clamp(40px,12vw,145px)/.8 "Barlow Condensed",sans-serif; letter-spacing: -.05em; } .footer-logo span { color: var(--green); } .socials { display: flex; gap: 18px; font: 10px "DM Mono",monospace; color: var(--muted); } .socials a { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; color: var(--white); transition: .2s; } .socials a:hover { color: var(--green); border-color: var(--green); } .socials svg { width: 18px; height: 18px; display: block; } .copyright { display: flex; justify-content: space-between; margin-top: 50px; color: #78858b; font: 10px "DM Mono",monospace; letter-spacing: .08em; } .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s,transform .7s; } .reveal.visible { opacity: 1; transform: none; } .pill { border-radius: 999px; } .accent { color: var(--green); } .hero-cta { border-color: #000; box-shadow: 0 0 16px rgba(25,240,0,.5),0 0 38px rgba(25,240,0,.28); animation: glow 2.4s ease-in-out infinite alternate; } @keyframes glow { from { box-shadow: 0 0 12px rgba(25,240,0,.4),0 0 28px rgba(25,240,0,.2); } to { box-shadow: 0 0 24px rgba(25,240,0,.8),0 0 56px rgba(25,240,0,.42); } } .btn svg { width: 12px; height: 12px; flex: none; display: block; } .hero-content .eyebrow { margin: 32px 0 0; } .hero-bottom { margin-top: 24px; } #tickets { padding: 80px 0 100px; } .tickets-head { justify-content: center; text-align: center; margin-bottom: 36px; } .lineup .section-head { margin-bottom: 36px; }
+.slider { position: relative; --dur: 5000ms; }
+.slider:focus-visible { outline: 2px solid var(--green); outline-offset: 6px; }
+.slides { position: relative; width: 100%; aspect-ratio: 16/9; max-height: 640px; overflow: hidden; border: 1px solid var(--line); background: #10102b; }
+.slide { position: absolute; inset: 0; margin: 0; opacity: 0; visibility: hidden; background: linear-gradient(145deg,#28228e,#11102d 70%); transition: opacity .9s ease, visibility 0s linear .9s; }
+.slide:nth-child(2n) { background: linear-gradient(145deg,#201b70,#10102b 70%); }
+.slide.is-active { opacity: 1; visibility: visible; transition: opacity .9s ease; }
+.slide:before { content: ""; position: absolute; width: 48%; aspect-ratio: 1; right: -6%; top: 6%; border: 1px solid rgba(25,240,0,.28); border-radius: 50%; box-shadow: 0 0 0 36px rgba(25,240,0,.035); }
+.slide img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; transform: scale(1.08); transition: transform 7s ease-out; }
+.slide.is-active img { transform: scale(1); }
+.slide:after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg,rgba(7,7,19,.9) 0%,rgba(7,7,19,0) 55%); }
+.slide figcaption { position: absolute; z-index: 1; left: clamp(20px,4vw,48px); right: clamp(20px,4vw,48px); bottom: clamp(18px,4vw,42px); }
+.artist-name { display: block; font: 900 clamp(38px,8.5vw,104px)/.9 "Barlow Condensed",sans-serif; letter-spacing: -.03em; text-transform: uppercase; overflow-wrap: break-word; opacity: 0; transform: translateY(26px); transition: opacity .8s ease .3s, transform .8s ease .3s; }
+.slide.is-active .artist-name { opacity: 1; transform: none; }
+.slider-controls { display: flex; align-items: center; gap: 16px; margin-top: 18px; }
+.slider-count { color: var(--muted); min-width: 62px; }
+.dots { display: flex; gap: 6px; flex: 1; min-width: 0; }
+.dot { flex: 1; max-width: 44px; padding: 10px 0; border: 0; background: none; cursor: pointer; }
+.dot i { display: block; height: 3px; background: rgba(255,255,255,.22); position: relative; overflow: hidden; }
+.dot i:after { content: ""; position: absolute; inset: 0; background: var(--green); transform: scaleX(0); transform-origin: left; }
+.dot.is-active i:after { animation: fill var(--dur) linear forwards; }
+.slider.is-paused .dot.is-active i:after { animation-play-state: paused; }
+@keyframes fill { to { transform: scaleX(1); } }
+.slider-btn { width: 46px; height: 46px; flex: none; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--white); display: grid; place-items: center; cursor: pointer; transition: .2s; }
+.slider-btn:hover { border-color: var(--green); color: var(--green); }
+.slider-btn svg { width: 12px; height: 12px; }
+.dot:focus-visible, .slider-btn:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+h1 .neon { font-style: normal; color: var(--green); } @media (max-width:760px){
   .nav { height: 64px; }
   .navlinks { display: none; }
   .hero { min-height: clamp(620px,100svh,900px); }
@@ -34,8 +61,14 @@
   .socials { margin-top: 30px; }
   .copyright { display: block; line-height: 2.2; }
   .copyright span { display: block; }
+  .slides { aspect-ratio: 4/5; max-height: none; }
+  .slider-controls { gap: 10px; flex-wrap: wrap; }
+  .slider-count { min-width: 0; flex: 1; order: 1; }
+  .slider-btn { order: 2; }
+  .dots { order: 3; flex: 1 0 100%; }
+  .slider-btn { width: 42px; height: 42px; }
 }
-@media (prefers-reduced-motion:reduce){ html {  scroll-behavior: auto; }  .ticker div {  animation: none; }  .reveal {  opacity: 1;  transform: none;  transition: none; } }</style>
+@media (prefers-reduced-motion:reduce){ html {  scroll-behavior: auto; }  .ticker div {  animation: none; }  .hero-cta {  animation: none; }  .slide, .slide img, .artist-name {  transition: none; }  .slide img {  transform: none; }  .artist-name {  opacity: 1;  transform: none; }  .dot.is-active i:after {  animation: none;  transform: scaleX(1); }  .reveal {  opacity: 1;  transform: none;  transition: none; } }</style>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich&display=swap">
     </head>
     <body>
@@ -44,17 +77,17 @@
             <nav class="nav">
                 <a class="logo" href="#top">SWAGFEST<span>&reg;</span></a>
                 <div class="navlinks">
-                    <a href="#lineup">Lineup</a><a href="#culture">The culture</a><a href="#details">Event info</a><a href="#tickets">Tickets</a>
+                    <a href="#lineup">Lineup</a><a href="#details">Event info</a><a href="#tickets">Tickets</a>
                 </div>
-                <a class="btn pill" href="#tickets">Get tickets &#8599;</a>
+                <a class="btn pill" href="#tickets">Get tickets <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M3.8 2.5H9.5V8.2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square"/></svg></a>
             </nav>
             <div class="wrap hero-content">
-                <h1>THE SWAG IS WITHIN YOU</h1>
+                <h1>THE <em class="neon">SWAG</em> IS <em class="neon">WITHIN</em> YOU</h1>
                 <div class="eyebrow mono">THE VAULT SOCIAL HOUSE, VI &middot; Saturday, December 5, 2026</div>
                 <div class="hero-bottom">
                     <div>
                         <p class="hero-copy">A gathering for sound, style and the people shaping what&apos;s next. One night. One frequency. All SWAG.</p>
-                        <a class="btn pill hero-cta" href="#tickets">Secure your spot <span>&#8599;</span></a>
+                        <a class="btn pill hero-cta" href="#tickets">Secure your spot <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M3.8 2.5H9.5V8.2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square"/></svg></a>
                     </div>
                     <div class="hero-meta">
                         <div>
@@ -100,44 +133,88 @@
                             <div class="price">GET YOUR TICKETS ON PLAP</div>
                             <p>We&apos;ve partnered with PLAP to give you a seamless ticketing experience. You will leave SWAGFEST to get your tickets on the external event page.</p>
                             <!-- [EDIT] This still points to an email address. Replace the href with your PLAP ticket page URL. -->
-                            <a class="btn pill" href="mailto:hello@swagfest.example?subject=SWAGFEST%20ticket%20updates">GET YOUR TICKETS ON PLAP &#8599;</a>
+                            <a class="btn pill" href="mailto:hello@swagfest.example?subject=SWAGFEST%20ticket%20updates">GET YOUR TICKETS ON PLAP <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M3.8 2.5H9.5V8.2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square"/></svg></a>
                         </article>
+                    </div>
+                </div>
+            </section>
+            <section class="lineup" id="lineup">
+                <div class="wrap">
+                    <div class="section-head">
+                        <h2 class="section-title">LINE <em>UP</em></h2>
+                    </div>
+                    <!-- [EDIT] LINE UP slideshow. For each artist: put their photo in an "images" folder in your repository,
+                         then change the img src (file name), the alt text and the ARTIST NAME below.
+                         To add an artist, copy a whole <figure> block. To remove one, delete its block.
+                         The dots and counter update on their own. data-delay is the time per slide in milliseconds. -->
+                    <div class="slider" data-delay="5000" role="region" aria-roledescription="carousel" aria-label="Line up" tabindex="0">
+                        <div class="slides">
+                            <figure class="slide is-active">
+                                <img src="images/artist-1.jpg" alt="ARTIST NAME 1" loading="lazy" decoding="async" onerror="this.remove()">
+                                <figcaption><strong class="artist-name">ARTIST NAME 1</strong></figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="images/artist-2.jpg" alt="ARTIST NAME 2" loading="lazy" decoding="async" onerror="this.remove()">
+                                <figcaption><strong class="artist-name">ARTIST NAME 2</strong></figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="images/artist-3.jpg" alt="ARTIST NAME 3" loading="lazy" decoding="async" onerror="this.remove()">
+                                <figcaption><strong class="artist-name">ARTIST NAME 3</strong></figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="images/artist-4.jpg" alt="ARTIST NAME 4" loading="lazy" decoding="async" onerror="this.remove()">
+                                <figcaption><strong class="artist-name">ARTIST NAME 4</strong></figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="images/artist-5.jpg" alt="ARTIST NAME 5" loading="lazy" decoding="async" onerror="this.remove()">
+                                <figcaption><strong class="artist-name">ARTIST NAME 5</strong></figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="images/artist-6.jpg" alt="ARTIST NAME 6" loading="lazy" decoding="async" onerror="this.remove()">
+                                <figcaption><strong class="artist-name">ARTIST NAME 6</strong></figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="images/artist-7.jpg" alt="ARTIST NAME 7" loading="lazy" decoding="async" onerror="this.remove()">
+                                <figcaption><strong class="artist-name">ARTIST NAME 7</strong></figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="images/artist-8.jpg" alt="ARTIST NAME 8" loading="lazy" decoding="async" onerror="this.remove()">
+                                <figcaption><strong class="artist-name">ARTIST NAME 8</strong></figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="images/artist-9.jpg" alt="ARTIST NAME 9" loading="lazy" decoding="async" onerror="this.remove()">
+                                <figcaption><strong class="artist-name">ARTIST NAME 9</strong></figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="images/artist-10.jpg" alt="ARTIST NAME 10" loading="lazy" decoding="async" onerror="this.remove()">
+                                <figcaption><strong class="artist-name">ARTIST NAME 10</strong></figcaption>
+                            </figure>
+                        </div>
+                        <div class="slider-controls">
+                            <span class="slider-count mono">01 / 10</span>
+                            <div class="dots"></div>
+                            <button class="slider-btn slider-prev" type="button" aria-label="Previous artist"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M8 1.5L3.5 6L8 10.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square"/></svg></button>
+                            <button class="slider-btn slider-next" type="button" aria-label="Next artist"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 1.5L8.5 6L4 10.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square"/></svg></button>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="details" id="details">
                 <div class="wrap">
-                    <div class="kicker mono">Make a date</div>
-                    <h2 class="section-title">THE<br><em>DETAILS.</em></h2>
+                    <h2 class="section-title">CURRENT EDITION&nbsp;:<br><em>LAGOS</em></h2>
                     <div class="detail-grid reveal">
                         <div class="detail">
                             <label class="mono">DATE</label><strong>Saturday, Dec 5th 2026</strong>
                         </div>
                         <div class="detail">
                             <label class="mono">LOCATION</label><strong>The Vault social house, vi</strong>
+                            <!-- [EDIT] Google Maps link. To use the exact pin, open the venue in Google Maps, tap Share, copy the link and paste it as the href. -->
+                            <p><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=The+Vault+Social+House+Victoria+Island+Lagos" target="_blank" rel="noopener">View on Google Maps <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M3.8 2.5H9.5V8.2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square"/></svg></a></p>
                         </div>
                         <div class="detail">
                             <label class="mono">DOORS</label><strong>8:00 - 4:00 WAT</strong>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section>
-                <div class="wrap faq">
-                    <div class="kicker mono">05 / Good to know</div>
-                    <h2 class="section-title" style="margin-bottom:38px">QUICK<br><em>QUESTIONS.</em></h2>
-                    <details>
-                        <summary>Where is SWAGFEST happening?</summary>
-                        <p>SWAGFEST takes place in Lagos, Nigeria. The exact venue and directions will be announced soon.</p>
-                    </details>
-                    <details>
-                        <summary>When do tickets go on sale?</summary>
-                        <p>Ticketing information and official purchase links will be announced here and on SWAGFEST&apos;s official channels.</p>
-                    </details>
-                    <details>
-                        <summary>Can I get lineup updates?</summary>
-                        <p>Follow the official SWAGFEST social channels for artist announcements and event updates.</p>
-                    </details>
                 </div>
             </section>
         </main>
@@ -150,7 +227,10 @@
                         </div>
                     </div>
                     <div class="socials">
-                        <a href="#" aria-label="Instagram">INSTAGRAM &#8599;</a><a href="#" aria-label="TikTok">TIKTOK &#8599;</a><a href="#" aria-label="X">X &#8599;</a>
+                        <!-- [EDIT] Replace each href="#" with your real profile link (Instagram, TikTok, X). -->
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg></a>
+                        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
                     </div>
                 </div>
                 <div class="copyright">
@@ -163,6 +243,101 @@
     function tick(){const left=Math.max(0,eventDate-Date.now());const units={days:86400000,hours:3600000,minutes:60000,seconds:1000};for(const [id,size] of Object.entries(units)){const el=document.getElementById(id);if(el)el.textContent=String(Math.floor(left/size)%(id==="days"?Infinity:id==="hours"?24:60)).padStart(2,"0")}}
     tick();setInterval(tick,1000);
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+  </script>
+<script>
+    (function () {
+      var slider = document.querySelector(".slider");
+      if (!slider) return;
+      var slides = Array.prototype.slice.call(slider.querySelectorAll(".slide"));
+      if (!slides.length) return;
+      var dotsBox = slider.querySelector(".dots");
+      var counter = slider.querySelector(".slider-count");
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var delay = parseInt(slider.getAttribute("data-delay"), 10) || 5000;
+      slider.style.setProperty("--dur", delay + "ms");
+      var index = 0, timer = null, startX = null;
+      var hold = { hover: false, focus: false, inView: false, hidden: document.hidden };
+
+      function pad(n) { return String(n).padStart(2, "0"); }
+
+      var dots = slides.map(function (s, n) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "dot";
+        b.setAttribute("aria-label", "Show artist " + (n + 1));
+        b.appendChild(document.createElement("i"));
+        b.addEventListener("click", function () { show(n); schedule(); });
+        dotsBox.appendChild(b);
+        return b;
+      });
+
+      function show(n) {
+        index = (n + slides.length) % slides.length;
+        slides.forEach(function (s, k) {
+          var on = k === index;
+          s.classList.toggle("is-active", on);
+          s.setAttribute("aria-hidden", on ? "false" : "true");
+        });
+        dots.forEach(function (d, k) {
+          d.classList.remove("is-active");
+          if (k === index) { void d.offsetWidth; d.classList.add("is-active"); }
+          d.setAttribute("aria-current", k === index ? "true" : "false");
+        });
+        counter.textContent = pad(index + 1) + " / " + pad(slides.length);
+      }
+
+      function canRun() {
+        return !reduce && slides.length > 1 && hold.inView && !hold.hover && !hold.focus && !hold.hidden;
+      }
+
+      function schedule() {
+        clearTimeout(timer);
+        timer = null;
+        if (!canRun()) { slider.classList.add("is-paused"); return; }
+        slider.classList.remove("is-paused");
+        timer = setTimeout(function () { show(index + 1); schedule(); }, delay);
+      }
+
+      function setHold(key, value) {
+        if (hold[key] === value) return;
+        hold[key] = value;
+        show(index);
+        schedule();
+      }
+
+      slider.querySelector(".slider-prev").addEventListener("click", function () { show(index - 1); schedule(); });
+      slider.querySelector(".slider-next").addEventListener("click", function () { show(index + 1); schedule(); });
+
+      slider.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") setHold("hover", true); });
+      slider.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse") setHold("hover", false); });
+      slider.addEventListener("focusin", function (e) {
+        if (e.target.matches && e.target.matches(":focus-visible")) setHold("focus", true);
+      });
+      slider.addEventListener("focusout", function () { setHold("focus", false); });
+      document.addEventListener("visibilitychange", function () { setHold("hidden", document.hidden); });
+
+      slider.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowLeft") { show(index - 1); schedule(); }
+        if (e.key === "ArrowRight") { show(index + 1); schedule(); }
+      });
+
+      slider.addEventListener("touchstart", function (e) { startX = e.touches[0].clientX; }, { passive: true });
+      slider.addEventListener("touchend", function (e) {
+        if (startX === null) return;
+        var dx = e.changedTouches[0].clientX - startX;
+        startX = null;
+        if (Math.abs(dx) > 40) { show(index + (dx < 0 ? 1 : -1)); schedule(); }
+      });
+
+      show(0);
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(function (entries) {
+          setHold("inView", entries[0].isIntersecting);
+        }, { threshold: 0.25 }).observe(slider);
+      } else {
+        setHold("inView", true);
+      }
+    })();
   </script>
     </body>
 </html>
